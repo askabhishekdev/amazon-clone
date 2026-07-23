@@ -11,6 +11,11 @@ A responsive, interactive, pixel-perfect clone of the Amazon.com home page built
 
 ## 📌 Features
 
+- **🔐 Authentic Amazon Sign-In Page**:
+  - Pixel-perfect Amazon Sign-In page ([signin.html](file:///c:/Users/rahul/pythonSIKHO/Amazon%20Clone/signin.html)) with two-step email & password validation.
+  - Interactive "Need help?" accordion toggle for password recovery & sign-in issues.
+  - Link from main navigation bar ("Hello, sign in / Account & Lists") directly to the sign-in page.
+  - Responsive footer with legal notice and copyright.
 - **⚡ Interactive JavaScript Enhancements**:
   - **Live Search & Category Filtering**: Type keywords in the search bar or select a category dropdown to dynamically filter product cards in real time.
   - **Interactive Cart & Toast Alerts**: Click "See more" or product cards to dynamically add items to your cart, update the cart badge count, and trigger sleek toast notifications.
