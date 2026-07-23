@@ -1,15 +1,22 @@
 # Amazon Landing Page Clone 🛒
 
-A responsive, pixel-perfect clone of the Amazon.com home page built using pure **HTML5** and **CSS3**.
+A responsive, interactive, pixel-perfect clone of the Amazon.com home page built using **HTML5**, **CSS3**, and Vanilla **JavaScript**.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![FontAwesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
 ---
 
 ## 📌 Features
 
+- **⚡ Interactive JavaScript Enhancements**:
+  - **Live Search & Category Filtering**: Type keywords in the search bar or select a category dropdown to dynamically filter product cards in real time.
+  - **Interactive Cart & Toast Alerts**: Click "See more" or product cards to dynamically add items to your cart, update the cart badge count, and trigger sleek toast notifications.
+  - **Slide-out Navigation Drawer**: Click the "All" hamburger menu to open a smooth, full-height side navigation menu overlay with sign-in and category links.
+  - **Deliver-to Location Picker**: Click the delivery location header to dynamically update your shipping country/zip code.
+  - **Smooth "Back to Top" Scroll**: Instant smooth-scrolling to the top of the page when clicking the footer back-to-top banner.
 - **Navigation Bar**:
   - Amazon Logo & Location Selector ("Deliver to India")
   - Search bar with category dropdown and search icon
@@ -20,9 +27,9 @@ A responsive, pixel-perfect clone of the Amazon.com home page built using pure *
   - Full-width hero background banner with local currency/country notification
 - **Product Category Grid**:
   - Grid layout featuring 8 distinct product cards (Health & Personal Care, Clothes, Furniture, Electronics, Beauty Picks, Pet Care, Toys, Fashion Trends)
-  - Hover effects on cards with clear call-to-action ("See more")
+  - Hover elevation effects on cards with clear call-to-action ("See more")
 - **Multi-tiered Footer**:
-  - "Back to Top" button
+  - "Back to Top" smooth scroll button
   - Four-column information menu (Get to Know Us, Make Money with Us, Payment Products, Let Us Help You)
   - Amazon brand footer logo
   - Legal links (Conditions of Use, Privacy Notice, Ads Privacy Choices) and copyright notice
@@ -35,6 +42,8 @@ A responsive, pixel-perfect clone of the Amazon.com home page built using pure *
 Amazon Clone/
 ├── index.html          # Main HTML markup structure
 ├── style.css           # Custom styling and responsive design
+├── script.js          # Interactive JavaScript logic & DOM manipulation
+├── README.md           # Project documentation
 ├── amazon_logo.png     # Amazon logo asset
 ├── hero_image.jpg      # Hero section background banner
 ├── box1_image.jpg      # Category card images (1 to 8)
