@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign-In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body class="signin-body">
+    <div class="signin-container">
+        <!-- Logo -->
+        <a href="index.html" class="signin-logo-link">
+            <div class="signin-logo"></div>
+        </a>
+
+        <!-- Sign-In Card -->
+        <div class="signin-box">
+            <h1 class="signin-title">Sign in</h1>
+            
+            <form id="signin-form" onsubmit="return false;">
+                <label for="email-input" class="signin-label">Email or mobile phone number</label>
+                <input type="text" id="email-input" class="signin-input" autocomplete="username" required>
+                <div class="error-msg" id="email-error">Enter your email or mobile phone number</div>
+
+                <div id="password-group" class="password-group" style="display: none;">
+                    <div class="password-header">
+                        <label for="password-input" class="signin-label">Password</label>
+                        <a href="#" class="forgot-link">Forgot your password?</a>
+                    </div>
+                    <input type="password" id="password-input" class="signin-input" autocomplete="current-password">
+                    <div class="error-msg" id="password-error">Enter your password</div>
+                </div>
+
+                <button type="submit" id="continue-btn" class="signin-btn">Continue</button>
+            </form>
+
+            <p class="signin-terms">
+                By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+            </p>
+
+            <div class="signin-help">
+                <a href="#" id="help-toggle" class="help-toggle">
+                    <i class="fa-solid fa-caret-right" id="help-icon"></i> Need help?
+                </a>
+                <div id="help-links" class="help-links" style="display: none;">
+                    <a href="#">Forgot your password?</a>
+                    <a href="#">Other issues with Sign-In</a>
+                </div>
+            </div>
+
+            <hr class="signin-divider">
+
+            <div class="business-section">
+                <p class="business-title">Buying for work?</p>
+                <a href="#" class="business-link">Shop on Amazon Business</a>
+            </div>
+        </div>
+
+        <!-- Create Account Section -->
+        <div class="create-account-container">
+            <div class="divider-with-text">
+                <span>New to Amazon?</span>
+            </div>
+            <a href="#" id="create-account-btn" class="create-account-btn">Create your Amazon account</a>
+        </div>
+    </div>
+
+    <!-- Sign-In Footer -->
+    <footer class="signin-footer">
+        <div class="signin-footer-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>
+        </div>
+        <p class="signin-copyright">© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+
+    <script src="signin.js"></script>
+</body>
+</html>

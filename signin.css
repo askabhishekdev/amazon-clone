@@ -1,0 +1,308 @@
+/* Amazon Sign-In Custom Styling */
+
+.signin-body {
+    background-color: #ffffff;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    color: #111111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.signin-container {
+    width: 350px;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.signin-logo-link {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+
+.signin-logo {
+    background-image: url("amazon_logo.png");
+    height: 38px;
+    width: 105px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1) brightness(0); /* Converts white logo to dark for light bg */
+}
+
+/* Sign In Box */
+.signin-box {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 26px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.signin-title {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #111111;
+}
+
+.signin-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #111111;
+}
+
+.signin-input {
+    width: 100%;
+    height: 31px;
+    padding: 3px 7px;
+    box-sizing: border-box;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.signin-input:focus {
+    border-color: #e77600;
+    box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+}
+
+.signin-input.input-error {
+    border-color: #d0011b;
+    box-shadow: 0 0 3px 1px rgba(208, 1, 27, 0.5);
+}
+
+.error-msg {
+    color: #c40000;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+.password-group {
+    margin-top: 14px;
+}
+
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.forgot-link {
+    font-size: 12px;
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Sign In Button */
+.signin-btn {
+    width: 100%;
+    height: 33px;
+    margin-top: 16px;
+    background: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #0f1111;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.signin-btn:hover {
+    background: #f7ca00;
+    border-color: #f2c200;
+}
+
+.signin-btn:active {
+    background: #f0b800;
+}
+
+/* Terms */
+.signin-terms {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 18px;
+    color: #111111;
+}
+
+.signin-terms a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.signin-terms a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Help Accordion */
+.signin-help {
+    margin-top: 22px;
+}
+
+.help-toggle {
+    font-size: 13px;
+    color: #0066c0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.help-toggle:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.help-links {
+    margin-top: 8px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.help-links a {
+    font-size: 12px;
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.help-links a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.signin-divider {
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+    margin: 22px 0 18px 0;
+}
+
+/* Business Section */
+.business-section {
+    font-size: 12px;
+}
+
+.business-title {
+    font-weight: 700;
+    margin: 0 0 3px 0;
+}
+
+.business-link {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.business-link:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Create Account Container */
+.create-account-container {
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.divider-with-text {
+    position: relative;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.divider-with-text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e7e7e7;
+    z-index: 1;
+}
+
+.divider-with-text span {
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #767676;
+}
+
+.create-account-btn {
+    display: block;
+    width: 100%;
+    height: 31px;
+    line-height: 31px;
+    background: #e7e9ec;
+    border: 1px solid #adb1b8;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #111111;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    transition: background 0.2s;
+}
+
+.create-account-btn:hover {
+    background: #e0e3e8;
+}
+
+/* Footer */
+.signin-footer {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,.14), rgba(0,0,0,0) 3px);
+    margin-top: 40px;
+    padding: 26px 0;
+    text-align: center;
+}
+
+.signin-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.signin-footer-links a {
+    font-size: 11px;
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.signin-footer-links a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.signin-copyright {
+    font-size: 11px;
+    color: #555555;
+    margin: 0;
+}
